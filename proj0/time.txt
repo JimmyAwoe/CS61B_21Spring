@@ -1,0 +1,6 @@
+emptySpaceExists: 23min13sec
+maxTileExists: 1min18sec
+atLeastOneMoveExists: 30min49sec
+tilt: 1h06min15sec
+
+
