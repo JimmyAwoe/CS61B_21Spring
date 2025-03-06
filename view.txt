@@ -1,0 +1,53 @@
+Record what I have learned from CS61B.
+=====================================
+For the reason that I have learned a lot Java programming from MIT 6.092, so I 
+mainly record the thing I not familar with, which may not cover the lesson completely.
+
+
+Java Grammer
+------
+* static key word used for class method or variable. The method or variable don't 
+    declare with static is for instance.
+* In Java, there are eight primitive types: byte, short, int, long, float, 
+    double, boolean, and char. Other type is reference type. All nine types.
+    * For primitive type, instance will store the variable bits directly.
+    * For reference type, instance will store a 64 bit address that point to memory 
+        storing the data.
+* If nested class don't use any instance members or method of the outer class, 
+    make the nested class static.
+* The functionailty of new keyword is to return the memory address of reference
+    type data.
+* generic: generic allow one to define a placeholder to represent any type user 
+    asked later.
+    * If you need to instantiate a generic over a primitive type, use Integer, 
+        Double, Character, Boolean, Long, Short, Byte, or Float instead of their
+        primitive equivalents.
+
+
+Data Structure
+------
+* The Gloden Rule of Equals: the different meaning for equal between reference and
+    primitive types.
+* Invariant: An invariant is a fact about a data structure that is guaranteed to 
+    be true.
+* Linked List:
+    * Linked List has base class IntNode, achieved by nested class, which act 
+        as a node with item and next.
+    * Linked List has addFirst, getFirst, etc methods. 
+    * To reduce the time needed for computing the size of a Linked List, one can
+        set a size class variable to record the size once the size has changed 
+        instead of using loop.
+    * We may need to create an empty Linked List for convenient. For the reason to
+        create a invariant that first(a member variable) is always a IntNode, we
+        can create a special "sentinel" to foreverly stand as the first node.
+    * To reduce the time needed for using addLast, we need a point point to the last
+        part of Linked List. However when the Linked List changed, the point need
+        to reattach the second last one, which also need loop. Hence, we can create
+        a dual Linked List to solve this problem.
+    * Set the first as private to force user use method we give to change the Linked
+        List. This will reduce error.
+    * Use generic allow use create Linked List contains every type.
+     
+
+
+
