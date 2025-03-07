@@ -12,6 +12,7 @@ public class IntListExercises {
         if (lst == null){
             return;
         }
+        IntList head = lst;
         while (head != null) {
             head.first += c;
             head = head.rest;
